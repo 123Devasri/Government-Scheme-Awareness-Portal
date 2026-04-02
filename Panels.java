@@ -89,7 +89,7 @@ class LoginPanel extends JPanel {
         // Buttons
         JPanel btnPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 8, 0));
         btnPanel.setBackground(new Color(212, 208, 200));
-        btnLogin    = createButton("Login",    null , null);
+        btnLogin    = createButton("Login",    new Color(0,0,128), Color.WHITE);
         btnRegister = createButton("Register", null, null);
         btnCancel   = createButton("Cancel",   null, null);
         btnPanel.add(btnLogin);
@@ -387,7 +387,7 @@ class DashboardPanel extends JPanel {
         JButton btnView = new JButton("Go to Scheme Finder →");
         btnView.setFont(new Font("SansSerif", Font.BOLD, 11));
         btnView.setBackground(new Color(0,0,128));
-        btnView.setForeground(Color.BLACK);
+        btnView.setForeground(Color.WHITE);
         btnView.setOpaque(true);
         JPanel btnWrap = new JPanel(new FlowLayout(FlowLayout.RIGHT, 0, 4));
         btnWrap.setBackground(new Color(212,208,200));
@@ -554,7 +554,7 @@ class SchemeFinderPanel extends JPanel {
         g.gridy=6; g.weighty=0; g.fill=GridBagConstraints.HORIZONTAL;
         btnFind.addActionListener(e -> doSearch());
         p.add(btnFind = new JButton("Find Schemes"), g);
-        btnFind.setBackground(new Color(0,0,128)); btnFind.setForeground(Color.BLACK); btnFind.setOpaque(true);
+        btnFind.setBackground(new Color(0,0,128)); btnFind.setForeground(Color.WHITE); btnFind.setOpaque(true);
         btnFind.setFont(new Font("SansSerif", Font.BOLD, 12));
         btnFind.addActionListener(e -> doSearch());
 
@@ -626,7 +626,7 @@ class SchemeFinderPanel extends JPanel {
         btnApply = new JButton("Apply Now");
         btnLink  = new JButton("Official Website");
         JButton btnSave = new JButton("Save Scheme");
-        btnApply.setBackground(new Color(0,0,128)); btnApply.setForeground(Color.BLACK); btnApply.setOpaque(true);
+        btnApply.setBackground(new Color(0,0,128)); btnApply.setForeground(Color.WHITE); btnApply.setOpaque(true);
         btnApply.setFont(new Font("SansSerif", Font.BOLD, 12));
         dBtns.add(btnApply); dBtns.add(btnLink); dBtns.add(btnSave);
         detail.add(dBtns, BorderLayout.EAST);
@@ -850,7 +850,7 @@ class DocumentUploadPanel extends JPanel {
 
         JLabel title = new JLabel("  Upload Documents — AI Verification", SwingConstants.LEFT);
         title.setFont(new Font("SansSerif", Font.BOLD, 13));
-        title.setForeground(Color.BLACK); title.setOpaque(true);
+        title.setForeground(Color.WHITE); title.setOpaque(true);
         title.setBackground(new Color(0,0,128));
         title.setPreferredSize(new Dimension(0, 28));
         add(title, BorderLayout.NORTH);
@@ -868,7 +868,7 @@ class DocumentUploadPanel extends JPanel {
         btnVerify = new JButton("  AI Verify & Submit Application  ");
         btnVerify.setFont(new Font("SansSerif",Font.BOLD,13));
         btnVerify.setBackground(new Color(0,100,0));
-        btnVerify.setForeground(Color.BLACK); btnVerify.setOpaque(true);
+        btnVerify.setForeground(Color.WHITE); btnVerify.setOpaque(true);
         JButton btnClear = new JButton("Clear All");
         JButton btnCancel = new JButton("Cancel");
         bottom.add(btnVerify); bottom.add(btnClear); bottom.add(btnCancel);

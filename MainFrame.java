@@ -12,7 +12,7 @@ public class MainFrame extends JFrame {
     private SchemeFinderPanel   finderPanel;
     private ApplicationPanel    appPanel;
     private DocumentUploadPanel uploadPanel;
-    //private ChatbotPanel        chatbotPanel;
+    private ChatbotPanel        chatbotPanel;
     private AlertsPanel         alertsPanel;
 
     // ── Layout ──
@@ -73,7 +73,7 @@ public class MainFrame extends JFrame {
         finderPanel     = new SchemeFinderPanel(this, service);
         appPanel        = new ApplicationPanel(this, service);
         uploadPanel     = new DocumentUploadPanel(this, service);
-        //chatbotPanel    = new ChatbotPanel(this, service);
+        chatbotPanel    = new ChatbotPanel(this, service);
         alertsPanel     = new AlertsPanel(this, service);
 
         cardContainer.add(loginPanel,    "login");
@@ -82,7 +82,7 @@ public class MainFrame extends JFrame {
         cardContainer.add(finderPanel,   "finder");
         cardContainer.add(appPanel,      "applications");
         cardContainer.add(uploadPanel,   "upload");
-        //cardContainer.add(chatbotPanel,  "chatbot");
+        cardContainer.add(chatbotPanel,  "chatbot");
         cardContainer.add(alertsPanel,   "alerts");
 
         mainArea.add(sideNav,       BorderLayout.WEST);
@@ -160,7 +160,7 @@ public class MainFrame extends JFrame {
             {"🔍 Scheme Finder", "finder"},
             {"📋 My Applications","applications"},
             {"📤 Upload Docs",   "upload"},
-          //  {"🤖 Chatbot",       "chatbot"},
+            {"🤖 Chatbot",       "chatbot"},
             {"🔔 Alerts",        "alerts"},
         };
 
@@ -234,7 +234,7 @@ public class MainFrame extends JFrame {
             {"🔍", "Scheme Finder",   "finder"},
             {"📋", "My Applications", "applications"},
             {"📤", "Upload Documents","upload"},
-         //   {"🤖", "AI Chatbot",      "chatbot"},
+            {"🤖", "AI Chatbot",      "chatbot"},
             {"🔔", "Alerts",          "alerts"},
         };
 
